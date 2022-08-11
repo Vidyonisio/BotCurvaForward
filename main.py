@@ -19,7 +19,11 @@ def str_lista(d,m,y):
         else:
             lista = [str(day), "0" + str(month), str(year)]
     else:
-        lista = [str(day),str(month), str(year)]
+        if day < 10:
+            lista = ["0"+str(day),str(month),str(year)]
+        else:
+            lista = [str(day), str(month), str(year)]
+
     string_lista = '/'.join(lista)
     return (string_lista)
 
