@@ -35,7 +35,7 @@ def bot(data):
     pyautogui.typewrite(data)
     time.sleep(0.1)
     pyautogui.click(548,315)
-    time.sleep(1.2)  #1.2
+    time.sleep(1.3)  #1.2
     pyautogui.moveTo(1262,352)
     time.sleep(0.08)
     pyautogui.click()
@@ -45,7 +45,7 @@ for i in range(d_mes-day1+1):
     print(data_str)
     bot(data_str)
     day +=1
-    time.sleep(1.6) #1
+    time.sleep(1.7) #1
 
 
 
